@@ -1,0 +1,26 @@
+.stats-container {
+  height: 100px;
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.stats-row {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+.card-types {
+  display: flex;
+  margin-left: auto;
+}
+
+.count-type {
+  text-align: center;
+}
+
+.icon {
+  display: block;
+  height: 30px;
+}

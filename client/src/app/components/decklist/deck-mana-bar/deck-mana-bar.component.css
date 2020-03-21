@@ -1,0 +1,18 @@
+.mana-bar-container {
+  width: 30px;
+  height: 100%;
+  background-color: #aaa;
+  margin-left: 12px;
+}
+
+.mana-bar {
+  width: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mana {
+  width: 30px;
+  text-align: center;
+  margin-left: 12px;
+}

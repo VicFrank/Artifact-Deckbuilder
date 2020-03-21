@@ -1,0 +1,10 @@
+<mat-card class="decklist">
+  <mat-card-title>Decklist</mat-card-title>
+  <app-decklist-heroes></app-decklist-heroes>
+  <app-decklist-stats></app-decklist-stats>
+  <app-decklist-row
+    *ngFor="let card of decklistStore.decklist$ | async"
+    [card]="card"
+    (remove)="decklistStore.removeCard($event)"
+  ></app-decklist-row>
+</mat-card>

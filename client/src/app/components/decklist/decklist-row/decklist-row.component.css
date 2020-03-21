@@ -1,0 +1,51 @@
+.decklist-row {
+  display: flex;
+  font-size: 20px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  font-family: "Radiance", sans-serif;
+}
+
+.mini-image {
+  height: 40px;
+}
+
+.cost-and-type {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.card-cost {
+  margin: auto;
+  text-align: center;
+  width: 20px;
+}
+
+.name {
+  padding-left: 8px;
+  margin: auto;
+  width: 330px;
+
+  vertical-align: middle;
+}
+
+.center {
+  margin: auto;
+}
+
+.amount {
+  width: 75px;
+  display: flex;
+}
+
+button {
+  margin: auto;
+  width: 25px;
+}
+
+.icon {
+  display: block;
+  height: 40px;
+}

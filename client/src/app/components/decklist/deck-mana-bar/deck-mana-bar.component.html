@@ -1,0 +1,26 @@
+<div class="mana-bar-container">
+  <div
+    *ngIf="redPercent > 0"
+    class="mana-bar colorRed"
+    [style.height.%]="redPercent"
+  ></div>
+  <div
+    *ngIf="blackPercent > 0"
+    class="mana-bar colorBlack"
+    [style.height.%]="blackPercent"
+  ></div>
+  <div
+    *ngIf="greenPercent > 0"
+    class="mana-bar colorGreen"
+    [style.height.%]="greenPercent"
+  ></div>
+  <div
+    *ngIf="bluePercent > 0"
+    class="mana-bar colorBlue"
+    [style.height.%]="bluePercent"
+  ></div>
+</div>
+
+<div class="mana">
+  {{ mana }}
+</div>

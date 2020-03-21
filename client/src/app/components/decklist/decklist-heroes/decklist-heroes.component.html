@@ -1,0 +1,9 @@
+<div class="hero-list">
+  <img
+    *ngFor="let card of decklistStore.heroes"
+    [src]="card.mini_image.default"
+    [alt]="card.card_name.english"
+    (click)="decklistStore.removeHero(card)"
+    class="hero-image"
+  />
+</div>

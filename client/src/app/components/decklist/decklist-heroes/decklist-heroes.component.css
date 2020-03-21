@@ -1,0 +1,15 @@
+.heroes-container {
+  min-height: 70px;
+}
+
+.hero-list {
+  display: flex;
+  margin: auto;
+}
+
+.hero-image {
+  height: 50px;
+  margin: 0 10px 0 10px;
+
+  cursor: pointer;
+}

@@ -1,0 +1,6 @@
+.deck-builder {
+  display: grid;
+  grid-template-columns: 1fr 512px;
+
+  height: 100%;
+}

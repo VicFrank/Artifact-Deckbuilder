@@ -1,0 +1,21 @@
+<button
+  class="filter-button"
+  [class.selected]="selected"
+  [class.item]="isItem"
+  (click)="toggleFilter()"
+>
+  <div
+    *ngIf="type === 'colors'"
+    [ngClass]="{
+      'color-icon': true,
+      colorRed: value == 'red',
+      colorGreen: value == 'green',
+      colorBlack: value == 'black',
+      colorBlue: value == 'blue'
+    }"
+  ></div>
+  <app-card-type-icon
+    *ngIf="type !== 'colors'"
+    [cardType]="value"
+  ></app-card-type-icon>
+</button>

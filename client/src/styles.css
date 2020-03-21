@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/purple-green.css";
+
+@font-face {
+  font-family: "Radiance-Regular";
+  src: url("./assets/fonts/Radiance-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.colorRed {
+  background-image: url("./assets/images/colors/histogram_red.png");
+}
+.colorBlack {
+  background-image: url("./assets/images/colors/histogram_black.png");
+}
+.colorBlue {
+  background-image: url("./assets/images/colors/histogram_blue.png");
+}
+.colorGreen {
+  background-image: url("./assets/images/colors/histogram_green.png");
+}

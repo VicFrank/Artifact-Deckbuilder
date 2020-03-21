@@ -1,0 +1,16 @@
+<div class="container">
+  <app-card-filters></app-card-filters>
+  <mat-card class="cards">
+    <app-card
+      *ngFor="let card of cardListStore.cardList"
+      [card]="card"
+      class="card"
+      (add)="decklistStore.addCard($event)"
+    ></app-card>
+    <mat-paginator
+      [length]="cardListStore.length"
+      [pageSize]="cardListStore.pageSize"
+      (page)="changePage($event)"
+    ></mat-paginator>
+  </mat-card>
+</div>

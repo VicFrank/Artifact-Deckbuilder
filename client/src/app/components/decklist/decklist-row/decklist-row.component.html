@@ -1,0 +1,52 @@
+<div
+  [ngClass]="{
+    'decklist-row': true,
+    colorRed: card.card.is_red,
+    colorBlack: card.card.is_black,
+    colorBlue: card.card.is_blue,
+    colorGreen: card.card.is_green
+  }"
+>
+  <img
+    [src]="card.card.mini_image.default"
+    [alt]="card.card.card_name.english"
+    class="mini-image"
+  />
+  <div class="cost-and-type">
+    <app-card-type-icon
+      class="icon"
+      [cardType]="
+        card.card.card_type === 'Item'
+          ? card.card.sub_type
+          : card.card.card_type
+      "
+    ></app-card-type-icon>
+    <div class="card-cost">
+      {{ card.card.mana_cost }}
+    </div>
+  </div>
+  <div class="name">
+    {{ card.card.card_name.english }}
+  </div>
+  <div class="amount">
+    <button
+      *ngIf="!isHeroCard(card.card)"
+      mat-icon-button
+      color="accent"
+      aria-label="Add Card"
+      (click)="remove.emit(card.card)"
+    >
+      <mat-icon>add</mat-icon>
+    </button>
+    <div class="center">x{{ card.amount }}</div>
+    <button
+      *ngIf="!isHeroCard(card.card)"
+      mat-icon-button
+      color="accent"
+      aria-label="Remove Card"
+      (click)="remove.emit(card.card)"
+    >
+      <mat-icon>remove</mat-icon>
+    </button>
+  </div>
+</div>

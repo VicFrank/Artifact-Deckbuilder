@@ -1,0 +1,16 @@
+.card-type-section {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.filter-type {
+  text-transform: uppercase;
+}
+
+.filter-row {
+  display: flex;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}

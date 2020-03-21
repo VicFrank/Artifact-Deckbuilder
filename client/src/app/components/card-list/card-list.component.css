@@ -1,0 +1,8 @@
+.container {
+  max-width: 850px;
+  margin: auto;
+}
+
+.cards {
+  grid-template-columns: repeat(4, 1fr);
+}

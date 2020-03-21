@@ -1,0 +1,50 @@
+<div class="stats-row">
+  <div class="num-cards">
+    <span>{{ decklistStore.numCards }}</span> Cards
+  </div>
+  <div class="card-types">
+    <div class="num-type">
+      <app-card-type-icon cardType="spell" class="icon"></app-card-type-icon>
+      <div class="count-type">{{ decklistStore.numSpells }}</div>
+    </div>
+    <div class="num-type">
+      <app-card-type-icon cardType="creep" class="icon"></app-card-type-icon>
+      <div class="count-type">{{ decklistStore.numCreeps }}</div>
+    </div>
+    <div class="num-type">
+      <app-card-type-icon
+        cardType="improvement"
+        class="icon"
+      ></app-card-type-icon>
+      <div class="count-type">{{ decklistStore.numImprovements }}</div>
+    </div>
+  </div>
+</div>
+
+<div class="stats-row">
+  <div class="num-cards">
+    <span>{{ decklistStore.numItems }}</span> Items
+  </div>
+  <div class="card-types">
+    <div class="num-type">
+      <app-card-type-icon cardType="weapon" class="icon"></app-card-type-icon>
+      <div class="count-type">{{ decklistStore.numWeapons }}</div>
+    </div>
+    <div class="num-type">
+      <app-card-type-icon cardType="armor" class="icon"></app-card-type-icon>
+      <div class="count-type">{{ decklistStore.numArmor }}</div>
+    </div>
+    <div class="num-type">
+      <app-card-type-icon cardType="health" class="icon"></app-card-type-icon>
+      <div class="count-type">{{ decklistStore.numAccessory }}</div>
+    </div>
+  </div>
+</div>
+
+<div class="stats-container">
+  <app-deck-mana-bar
+    *ngFor="let manaCount of decklistStore.manaCounts; let i = index"
+    [manaCount]="manaCount"
+    [mana]="i + 1"
+  ></app-deck-mana-bar>
+</div>
