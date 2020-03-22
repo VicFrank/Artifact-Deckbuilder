@@ -9,6 +9,7 @@ import { isHeroCard } from "../../../../assets/card-data";
 })
 export class DecklistRowComponent {
   @Input() card: any;
+  @Output() add = new EventEmitter<number>();
   @Output() remove = new EventEmitter<number>();
 
   isHeroCard = isHeroCard;
